@@ -1,0 +1,25 @@
+{%extends 'base.html'%} {% block content %} {% for projects in project %}
+
+<div class="container shadow" style="margin-top: 2%;">
+
+    <div class="row">
+        <h1>{{projects.title}}</h1>
+
+    </div>
+
+    <div class="row">
+        <img src="{{projects.project_image.url}}" class="img-responsive" alt="" style="height: 80%;width: 40%;">
+    </div>
+
+
+
+    <div class="row">
+        <p>{{projects.description}}</p>
+    </div>
+
+    <div class="row">
+        <p>Posted {{projects.date_posted|timesince}} by {{projects.editor.first_name}}</p>
+    </div>
+
+</div>
+{% endfor %} {% endblock %}
