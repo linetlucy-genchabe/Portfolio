@@ -13,3 +13,12 @@ def project(request):
     except Project.DoesNotExist:
         raise Http404()
     return render(request,"project.html", {"project":project})
+
+def skills(request):
+    try:
+        skills = Skills.objects.all()
+    except Skills.DoesNotExist:
+        raise Http404()
+    return render(request,"skills.html", {"skills":skills})
+
+
