@@ -26,4 +26,7 @@ class Project(models.Model):
     date_posted = models.DateTimeField(auto_now_add=True)
     project_image = models.ImageField(upload_to = 'project/',blank=True)
 
+class Skills(models.Model):
+    name= models.CharField(max_length =60)
+
    
