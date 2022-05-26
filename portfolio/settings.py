@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=opo)p-we1vefn&2!5zn6)8t(+2+e6i%vi#*6a=dx(4npw3qhk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
