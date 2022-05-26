@@ -1,18 +1,23 @@
-{% block content % }
-<section class="skills container" id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>UI/UX design</li>
-        <li>Web Design</li>
-        <li>Web development</li>
+{%extends 'base.html'%} {% block content %} {% for skill in skills %}
+<div class="container shadow" style="margin-top: 3%;padding-top: 2%;padding-bottom: 2%;">
+    <section class="skills container" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>{{skill.name}}</li>
+            <li>UI/UX design</li>
 
-    </ul>
-    <h2>Languages</h2>
-    <ul>
+            <li>Web development</li>
+
+        </ul>
+        <h2>Languages</h2>
+        <ul>
 
 
-        <li>HTML/css/bootstrap</li>
-        <li>Angularjs</li>
-        <li>Python/flask/django</li>
-    </ul>
-</section>{%endblock%}
+            <li>HTML/css/bootstrap</li>
+            <li>Angularjs</li>
+            <li>Python/flask/django</li>
+        </ul>
+    </section>
+
+</div>
+{%endfor%}{%endblock%}
