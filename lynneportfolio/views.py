@@ -6,7 +6,8 @@ from .models import Project,Skills
 # Create your views here.
 def index(request):
     return render(request,'index.html')
-
+def about(request):
+    return render(request,'about.html')
 def project(request):
     try:
         project = Project.objects.all()
@@ -20,5 +21,11 @@ def skills(request):
     except Skills.DoesNotExist:
         raise Http404()
     return render(request,"skills.html", {"skills":skills})
+def certifications(request):
+    try:
+        skills = Skills.objects.all()
+    except Skills.DoesNotExist:
+        raise Http404()
+    return render(request,"certifications.html", {"certifications":certifications})
 
 

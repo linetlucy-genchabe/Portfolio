@@ -1,0 +1,19 @@
+{%extends 'base.html'%} {% block content %}
+<h1 style="font-family: 'pacifico',cursive;margin-top: 5%;">No certifications uploaded yet!</h1>
+{% for certificate in certifications %}
+<div class="container shadow" style="margin-top: 3%;padding-top: 2%;padding-bottom: 2%;">
+    <section class="skills container" id="skills">
+        <h1>Certifications</h1>
+        <ul>
+            <li>{{certificate.name}}</li>
+            <li>{{certificate.certifications_image}}</li>
+
+
+
+        </ul>
+
+    </section>
+
+
+</div>
+{%endfor%} {%endblock%}

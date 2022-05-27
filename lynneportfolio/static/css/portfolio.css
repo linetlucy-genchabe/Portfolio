@@ -32,6 +32,14 @@ footer .svg-inline--fa:hover {
     color: #3c778a;
 }
 
+.about {
+    background: linear-gradient(rgb(247, 245, 245), rgb(94, 20, 100)), url("../assets/stars.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
 .skills ul {
     align-items: center;
     display: flex;

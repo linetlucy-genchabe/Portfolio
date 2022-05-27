@@ -29,4 +29,8 @@ class Project(models.Model):
 class Skills(models.Model):
     name= models.CharField(max_length =60)
 
+class Certifications(models.Model):
+    name= models.CharField(max_length =60)
+    certifications_image = models.ImageField(upload_to = 'certifications/',blank=True)
+
    

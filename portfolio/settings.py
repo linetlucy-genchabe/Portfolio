@@ -58,7 +58,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 # DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-ALLOWED_HOSTS=[]
+
 
 
 
